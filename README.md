@@ -18,7 +18,7 @@ $ yarn install
 
 ## Usage
 
-- edit package.json scripts for your project
+- customize package.json scripts for your project
 
 ### Start
 

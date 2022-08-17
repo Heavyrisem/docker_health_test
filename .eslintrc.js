@@ -15,7 +15,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignore: ["dist", "node_modules"],
+  ignorePatterns: ['dist', 'node_modules'],
   rules: {
     'prettier/prettier': 'error',
     'import/extensions': [

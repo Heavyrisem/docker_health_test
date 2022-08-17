@@ -29,6 +29,9 @@ $ yarn start
 ### Build
 
 ```bash
+# remove build output
+$ yarn prebuild
+
 $ yarn build
 ```
 
@@ -36,4 +39,14 @@ $ yarn build
 
 ```bash
 $ yarn test
+
+# Test with coverage report
+$ yarn test:cov
+```
+
+### lint
+
+```bash
+$ yarn lint
+$ yarn lint:fix
 ```

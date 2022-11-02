@@ -28,6 +28,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'class-methods-use-this': 'off',
   },
   settings: {
     'import/resolver': {

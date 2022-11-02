@@ -1,3 +1,10 @@
-import HelloWorld from './module/HelloWorld';
+import express from 'express';
+import Config from './module/Config';
 
-console.log(HelloWorld());
+const { PORT } = Config.env;
+
+const app = express();
+
+app.listen(PORT, () => {
+  console.log('express listening on', PORT);
+});

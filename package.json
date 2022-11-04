@@ -10,7 +10,7 @@
     "test:cov": "jest --coverage",
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "build:tsc": "tsc",
+    "build:swc": "swc ./src -d ./dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

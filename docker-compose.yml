@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  express:
+    container_name: express
+    build: .
+    env_file: .env
+    ports:
+      - 3000:3000
+    healthcheck:
+      test: ['CMD', 'curl', 'localhost:3000']
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+  express_2:
+    container_name: express_2
+    build: .
+    depends_on:
+      express:
+        condition: service_healthy
+    environment:
+      - 3001:3001
